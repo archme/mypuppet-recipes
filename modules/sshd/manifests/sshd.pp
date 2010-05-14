@@ -25,11 +25,6 @@ class sshd {
 	subscribe  => File["/etc/ssh/sshd_config"]
     }
 
-    Exec {
-        logoutput => on_failure,
-        path => ["/bin", "/sbin", "/usr/bin", "/usr/sbin"]
-    }
-
     exec { "allow-sshd":
         command => 'echo "sshd: ALL" >> /etc/hosts.allow',
         unless => "grep ^sshd /etc/hosts.allow",
