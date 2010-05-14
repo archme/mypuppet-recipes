@@ -26,8 +26,8 @@ class sshd {
     }
 
     exec { "allow-sshd":
-        command => 'echo "sshd: ALL" >> /etc/hosts.allow',
-        unless => "grep ^sshd /etc/hosts.allow",
+        command => '/bin/echo "sshd: ALL" >> /etc/hosts.allow',
+        unless => "/bin/grep ^sshd /etc/hosts.allow",
 	require => Package["openssh"]
     }
 }
