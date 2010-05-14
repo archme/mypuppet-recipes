@@ -3,5 +3,6 @@ node default {
         include mc
         include screen
         include aliases
+        include ntpd
         include sshd
 }
