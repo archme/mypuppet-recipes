@@ -6,6 +6,4 @@ pacman -U http://github.com/downloads/archme/mypkgbuilds/ruby1.8-augeas-0.3.0-1-
 	http://github.com/downloads/archme/mypkgbuilds/facter1.8-1.5.7-1-any.pkg.tar.xz \
 	http://github.com/downloads/archme/mypkgbuilds/augeas-0.7.1-1-i686.pkg.tar.xz || exit 1
 
-pacman -Sy git || exit 1
-
 exit 0
