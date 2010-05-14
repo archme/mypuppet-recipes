@@ -1,3 +1,14 @@
 My personal puppet recipes for Arch Linux
 
-TODO: describe how to use this
+1. Make fresh arch install, and after first boot continue with this
+2. pacman -Sy git
+3. git clone http://github.com/archme/mypuppet-recipes.git
+4. cd mypuppet-recipes
+5. sh depinstall.sh && sh defaultconf.sh
+
+You should then have a (basic) arch-system configured to my preferences ;)
+
+TODO: 
+- more recipes
+- make configs "variable" through templates
+- use one "main config" for centralized configuration
