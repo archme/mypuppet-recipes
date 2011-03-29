@@ -12,4 +12,5 @@ node gosa {
 	include php
 	include ldap
 	include gosa-core
+	include dhcp
 }
