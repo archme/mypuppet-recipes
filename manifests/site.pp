@@ -6,3 +6,10 @@ node default {
         include ntpd
         include sshd
 }
+
+node gosa {
+	include httpd
+	include php
+	include ldap
+	include gosa-core
+}
