@@ -13,4 +13,6 @@ node gosa {
 	include ldap
 	include gosa-core
 	include dhcp
+	include named
+	include ldap2zone
 }
