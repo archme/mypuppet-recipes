@@ -13,6 +13,7 @@ node robtest01 {
 	include ldap
 	include ldap-client
 	include gosa-core
+	include nfs
 }
 
 node gosa {
