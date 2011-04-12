@@ -25,4 +25,7 @@ node gosa {
 	include dhcp
 	include named
 	include ldap2zone
+	include samba
+	include smbldap
+	#include gopdc
 }
