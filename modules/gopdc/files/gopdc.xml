@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gopdc>
+	<config name="options">
+		<option name="smb_domain" value="MYDOMAIN"/>
+		<option name="ux_uid" value="10000"/>
+		<option name="ux_gid" value="10001"/>
+		<option name="ux_homedir" value="/home"/>
+		<option name="add_prim_group" value="false"/>
+		<option name="add_prim_smb" value="false"/>
+		<option name="user_prim_domain" value="true"/>
+		<option name="add_samba_attr" value="false"/>
+		<option name="verify_rid" value="false"/>
+		<option name="mach_own_grp" value="true"/>
+		<option name="add_id_map" value="true"/>
+		<option name="add_gosa_acct" value="true"/>
+		<option name="initial" value="false"/>
+		<option name="ignore_notation" value="false"/>
+	</config>
+	
+	<config name="ldap">
+		<option name="ldap_host" value="localhost"/>
+		<option name="ldap_base" value="dc=my-domain,dc=com"/>
+		<option name="ldap_binddn" value="cn=Manager,dc=my-domain,dc=com"/>
+		<option name="ldap_pass" value="phironi"/>
+		<option name="ldap_tls" value="false" />
+		<option name="ldap_port" value="389"/>
+		<option name="ldap_prot" value="3"/>
+		<option name="ldap_suf_user" value="ou=people"/>
+		<option name="ldap_suf_group" value="ou=groups"/>
+		<option name="ldap_suf_mach" value="ou=winstations,ou=systems"/>
+		<option name="ldap_replica_sleep" value="0"/>
+		<option name="ldap_barf" value="false"/>
+	</config>
+	
+	<config name="features">
+		<option name="create_users" value="true"/>
+		<option name="delete_users" value="true"/>
+		<option name="create_machines" value="true"/>
+		<option name="create_groups" value="true"/>
+		<option name="delete_groups" value="true"/>
+		<option name="mod_groups" value="true"/>
+	</config>
+	
+	<config name="postexec">
+		<option name="post_exec_user" value="/bin/true"/>
+		<option name="post_exec_mach" value="/bin/true"/>
+		<option name="post_exec_grup" value="/bin/true"/>
+	</config>
+	
+	<config name="system">
+		<option name="prog_path" value="./scripts/"/>
+	</config>
+	
+	<config name="log">
+		<option name="log_channel" value="stderr"/>
+		<option name="log_file" value="./gopdc.log"/>
+		<option name="error_reporting" value="0"/>
+	</config>
+</gopdc>
